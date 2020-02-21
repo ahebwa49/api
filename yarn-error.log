@@ -1,0 +1,63 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add bcryptjs
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ahebwa49/go/bin:/usr/local/go/bin:/home/ahebwa49/go/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/ahebwa49/projects/api/node_modules/cliui/node_modules/string-width'
+
+npm manifest: 
+  {
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon app.js",
+      "lint": "eslint",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.6.8",
+      "nodemon": "^1.19.1"
+    },
+    "devDependencies": {
+      "eslint": "^6.1.0",
+      "mocha": "^6.2.0",
+      "should": "^13.2.3",
+      "sinon": "^7.4.1"
+    },
+    "nodemonConfig": {
+      "restartable": "rs",
+      "ignore": [
+        "node_modules/**/node_modules"
+      ],
+      "delay": "2500",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 4000
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
